@@ -1,3 +1,11 @@
-@import "custom";
+//helpers
+@import "helpers/fonts";
+@import "helpers/variables";
+@import "helpers/classes";
 
+
+//pages
 @import "pages/homepage";
+
+//custom
+@import "custom";
