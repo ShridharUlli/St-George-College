@@ -19,3 +19,14 @@
 
 .background-secondary {
   background-color: #e8eefe; }
+
+.bg-hero {
+  background: url("/assets/img/hero.jpg"); }
+
+.bg-icon-dark {
+  background: url("/assets/img/bgIconDark.png");
+  opacity: 0.5; }
+
+.bg-icon {
+  background: url("/assets/img/bgIcon.png");
+  opacity: 0.5; }
