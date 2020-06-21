@@ -20,6 +20,11 @@
 .background-secondary {
   background-color: #e8eefe; }
 
+.upperstroke:before {
+  content: "_";
+  font-weight: bold;
+  display: block; }
+
 /* https://coolors.co/ff5628-1e3541-2e5266-dee5e5-fcfafa */
 /* some effects transition more than one property at the same time */
 /* some effects transition height, some width, some both */
@@ -219,8 +224,3 @@
 
 .bg-icon {
   background: url("../img/bgIcon.png"); }
-
-.upperstroke:before {
-  content: "_";
-  font-weight: bold;
-  display: block; }
