@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
   </head>
   <body>
-    <div class="bg-hero bg-cover min-h-screen bg-no-repeat w-full">
+    <div class="min-h-screen bg-hero bg-cover bg-no-repeat w-full">
       <div
-        class="min-h-screen color-secondary w-1/2 text-center flex flex-col flex-auto items-center justify-around"
+        class="flex flex-col flex-auto items-center justify-around min-h-screen color-secondary w-1/2 text-center"
       >
         <div>
           <img src="assets/img/logo.png" alt="" class="h-40" />
@@ -19,9 +20,9 @@
           <h6 class="text-md font-light font-paragraph">
             <span class="text-lg">W</span>ELCOME <span class="text-lg">T</span>O
           </h6>
-          <h1 class="text-5xl font-bold font-paragraph">
+          <h1 class="text-5xl font-bold font-paragraph leading-none">
             <span class="text-6xl">S</span>T.<span class="text-6xl">G</span
-            >EORGE <span class="text-6xl">C</span>OLLEGE
+            >EORGE </br><span class="text-6xl">C</span>OLLEGE
           </h1>
         </div>
         <div class="text-center">
@@ -59,33 +60,143 @@
         </div>
       </div>
     </div>
-    <div class="background-secondary">
+    
+    <!-- section 2 -->
+    <div class="min-h-screen bg-icon-dark bg-no-repeat bg-center">
       <div
-        class="max-w-screen-xl w-11/12 mx-auto bg-icon-dark bg-no-repeat bg-center bg-op-25"
+        class="flex flex-col flex-auto items-center justify-center min-h-screen w-11/12 mx-auto max-w-screen-xl"
       >
         <div class="p-5">
           <h2 class="text-4xl color-primary font-paragraph font-bold">
             WHERE LEARNING IS DOING
           </h2>
-          <span class="font-link"
-            >We at St.George have enriched a culture of leaning thourgh
+        </div>
+        <div>
+          <p class="font-link color-primary text-center">
+            We at St.George have enriched a culture of leaning thourgh
             parctical application and experience. We are strong believers of the
             fact that true education and knowledge is imparted only when
             students in the heart of bangalore city. Its proximity to the
             industry is one of the greatest benefits we offer to our students.
-            Delegates and associats from top companies are invitded to deliver
+            Delegates and associates from top companies are invitded to deliver
             guest lectures and sessions. This provides students with valuable
             insights of how things flow in the actual busines world students are
             also provided with internships, this fabricates an environment where
             they get the oppurtunity to learn and develop themselves through
-            practical experiences. Hear from our past sudents how practical
-            learning helped them grow and strive as an individual</span
-          >
-          <span class="font-link">Discover more</span>
+            practical experiences.
+        </p>
+        <p class="font-link color-primary text-center">
+          Hear from our past sudents how practical learning helped them
+          grow and strive as an individual
+        </p>
+        </div>
+        <div class="p-5">
+          <a href="" class="font-link color-primary text-hover-primary text-hover-underline-goes-right">Discover more</a>
         </div>
       </div>
     </div>
 
+    <!-- section 2 -->
+
+    <!-- section 3 -->
+
+    <div class="min-h-screen background-primary">
+      <div
+        class="bg-icon bg-no-repeat bg-center flex flex-col flex-auto items-center justify-center min-h-screen w-11/12 mx-auto max-w-screen-xl color-secondary"
+      >
+        <div class="p-5">
+          <h2 class="text-4xl font-paragraph font-bold">
+            GET INSPIRED FROM INSPIRERS
+          </h2>
+        </div>
+        <div>
+          <p class="font-link text-center">
+            We at St.George have enriched a culture of leaning thourgh
+            parctical application and experience. We are strong believers of the
+            fact that true education and knowledge is imparted only when
+            students in the heart of bangalore city. Its proximity to the
+            industry is one of the greatest benefits we offer to our students.
+            Delegates and associates from top companies are invitded to deliver
+            guest lectures and sessions. This provides students with valuable
+            insights of how things flow in the actual busines world students are
+            also provided with internships, this fabricates an environment where
+            they get the oppurtunity to learn and develop themselves through
+            practical experiences.
+        </p>
+        <p class="font-link text-center">
+          Hear from our past sudents how practical learning helped them
+          grow and strive as an individual
+        </p>
+        </div>
+        <div class="p-5">
+          <a href="" class="font-link text-hover-secondary text-hover-underline-goes-right">Discover more</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- section 3 -->
+
+    
+    
+    <div class="h-auto bg-gray-100">
+      <div class="swiper-container mx-auto">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex">
+            
+            <div class="slider-content flex-1">
+              <div class="flex flex-col h-full justify-center items-start font-link pl-10">
+                <h6 class="color-primary text-sm uppercase upperstroke tracking-widest mb-5">Community Notices</h6>
+                <h1 class="text-4xl font-light">2020</h1>
+                <h1 class="text-4xl font-bold uppercase mb-5">Endeavour Par Excellence</h1>
+
+                <a href="" class="bg-red-600 text-gray-100 px-8 py-3 hover:bg-red-800">Click here</a>
+              </div>
+            </div>
+            <div class="slider-image flex-1">
+              <img src="assets/img/profile1.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide flex">
+            
+            <div class="slider-content flex-1">
+              <div class="flex flex-col h-full justify-center items-start font-link pl-10">
+                <h6 class="color-primary text-sm uppercase upperstroke tracking-widest mb-5">Community Notices</h6>
+                <h1 class="text-4xl font-light">2020</h1>
+                <h1 class="text-4xl font-bold uppercase mb-5">Endeavour Par Excellence</h1>
+
+                <a href="" class="bg-red-600 text-gray-100 px-8 py-3 hover:bg-red-800">Click here</a>
+              </div>
+            </div>
+            <div class="slider-image flex-1">
+              <img src="assets/img/profile.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide flex">
+            
+            <div class="slider-content flex-1">
+              <div class="flex flex-col h-full justify-center items-start font-link pl-10">
+                <h6 class="color-primary text-sm uppercase upperstroke tracking-widest mb-5">Community Notices</h6>
+                <h1 class="text-4xl font-light">2020</h1>
+                <h1 class="text-4xl font-bold uppercase mb-5">Endeavour Par Excellence</h1>
+
+                <a href="" class="bg-red-600 text-gray-100 px-8 py-3 hover:bg-red-800">Click here</a>
+              </div>
+            </div>
+            <div class="slider-image flex-1">
+              <img src="assets/img/profile1.jpg" alt="">
+            </div>
+          </div>
+          
+          
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="assets/js/main.min.js"></script>
+
   </body>
 </html>
