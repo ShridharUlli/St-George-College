@@ -185,13 +185,13 @@
   bottom: 0; }
 
 .bg-hero {
-  background: url("../assets/img/hero.jpg"); }
+  background: url("../img/hero.jpg"); }
 
 .bg-icon-dark {
-  background: url("../assets/img/bgIconDark.png"); }
+  background: url("../img/bgIconDark.png"); }
 
 .bg-icon {
-  background: url("../assets/img/bgIcon.png"); }
+  background: url("../img/bgIcon.png"); }
 
 .span {
   font-size: 3em;
