@@ -9,9 +9,27 @@
     <link rel="stylesheet" href="assets/css/tailwind.css" />
   </head>
   <body>
+    <!-- nav -->
+    <button class="btn-nav">
+      <div class="bar arrow-top-r"></div>
+      <div class="bar arrow-middle-r"></div>
+      <div class="bar arrow-bottom-r"></div>
+    </button>
+    <main>
+      <aside class="left-side hidden hideNav">
+        <ul class="effects-list">
+          <li class="item">double-linethrough-left-delayed</li>
+          <li class="item">double-linethrough-opening-delayed</li>
+          <li class="item">fill-closing-horizontal-delayed</li>
+          <li class="item">both-left-delayed</li>
+        </ul>
+      </aside>
+    </main>
+    <!-- nav -->
+
     <div class="min-h-screen bg-hero bg-cover bg-no-repeat w-full">
       <div
-        class="flex flex-col flex-auto items-center justify-around min-h-screen color-secondary w-1/2 text-center"
+        class="flex flex-col flex-auto items-center justify-around min-h-screen text-white w-full md:w-1/2 text-center"
       >
         <div>
           <img src="assets/img/logo.png" alt="" class="h-40" />
@@ -202,13 +220,19 @@
         class="flex flex-col flex-auto items-center justify-center w-11/12 mx-auto max-w-screen-xl"
       >
         <h1 class="text-6xl font-heading color-secondary p-20">Footer Section</h1>
+        <a class="text-md font-link color-secondary p-10" href="nav.html">Navbar</a>
         
       </div>
     </div>
 
 
+
     <!-- footer  -->
-    
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="assets/js/main.min.js"></script>
 
