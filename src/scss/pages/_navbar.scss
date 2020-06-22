@@ -11,11 +11,11 @@
   cursor: pointer;
 }
 .btn-nav:hover .bar {
-  background-color: $primary;
+  opacity: 0.7;
 }
 .bar {
   height: 5px;
-  background: #2c3e50;
+  background: $secondary;
   margin: 10px auto;
 }
 .btn-nav,
@@ -24,7 +24,7 @@
 }
 .btn-nav {
   padding: 15px 0;
-  position: fixed;
+  position: absolute;
   left: 20px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -89,7 +89,6 @@ main.navbar {
 }
 .left-side {
   position: fixed;
-  background: #2c3e50;
   overflow: auto;
   z-index: 1;
   left: -100%;
