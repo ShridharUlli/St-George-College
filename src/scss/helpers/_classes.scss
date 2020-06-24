@@ -30,3 +30,8 @@
   font-weight: bold;
   display: block;
 }
+
+//margin top for all the content to fit with navbar in place
+.-mt-screen {
+  margin-top: -100vh;
+}
