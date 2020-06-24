@@ -12,7 +12,7 @@ var swiper = new Swiper(".swiper-container", {
 
 $(document).ready(function () {
   /* code for navbar */
-  $(".btn-nav").on("click tap", function () {
+  $(".hamburger").on("click tap", function () {
     navbarMagic();
   });
 
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
   function navbarMagic() {
     $(".left-side").toggleClass("showNav hideNav").removeClass("hidden");
-    $(".btn-nav").toggleClass("animated");
+    $(".hamburger").toggleClass("animated");
   }
 
   /* toggle classes for demo main span */
@@ -63,5 +63,22 @@ $(document).ready(function () {
         }
       }
     });
+  });
+});
+
+//hamburger icon animation
+$("document").ready(function () {
+  var Closed = false;
+
+  $(".hamburger").click(function () {
+    if (Closed == true) {
+      $(this).removeClass("open");
+      $(this).addClass("closed");
+      Closed = false;
+    } else {
+      $(this).removeClass("closed");
+      $(this).addClass("open");
+      Closed = true;
+    }
   });
 });
