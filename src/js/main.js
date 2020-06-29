@@ -1,10 +1,15 @@
-var swiper = new Swiper(".swiper-container", {
+var swiper = new Swiper("#testimonials_teachers", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + "</span>";
-    },
+  },
+});
+var swiper = new Swiper("#testimonials_students", {
+  slidesPerView: 3,
+  spaceBetween: 40,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });
 

@@ -31,7 +31,12 @@
   display: block;
 }
 
-//margin top for all the content to fit with navbar in place
+//negative margin for full screen
+
 .-mt-screen {
   margin-top: -100vh;
+}
+
+.cursor-testimonials {
+  cursor: url("../img/cursor.svg"), auto;
 }
