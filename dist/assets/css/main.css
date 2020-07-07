@@ -598,10 +598,10 @@ input#toggleClass {
 .menu {
   position: absolute;
   z-index: 9999;
-  width: 100px; }
+  width: 100px;
+  cursor: pointer; }
 
-#toggleClass path {
-  fill: none;
+path {
   stroke: white;
   stroke-width: 3;
   stroke-linecap: round;
