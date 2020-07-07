@@ -600,7 +600,7 @@ input#toggleClass {
   z-index: 9999;
   width: 100px; }
 
-path {
+#toggleClass path {
   fill: none;
   stroke: white;
   stroke-width: 3;
