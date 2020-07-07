@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+    <script src="https://kit.fontawesome.com/920ea9853b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@6.0.0/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link
@@ -62,7 +63,7 @@
             />
           </div>
           <div class="flex-initial">
-            <a href="" class="font-link color-primary">Login</a>
+            <a href="" class="font-link color-primary">Login<i class="fas fa-sign-in-alt ml-2"></i></a>
           </div>
         </div>
 
@@ -128,7 +129,7 @@
           </ul>
         </div>
         
-        <div class="w-11/12 mx-auto flex items-start justify-between mt-auto">
+        <div class="w-11/12 mx-auto lg:flex items-start justify-between mt-auto">
           <div class="color-primary p-5">
             <a
               href=""
@@ -150,12 +151,19 @@
             <span>+91-0000000000</span>
             <span>test@test.com</span>
           </div>
-          <div class="color-primary p-5">
-            <h4 class="text-xl font-bold">Follow Us</h4>
-            <span>icon</span>
-            <span>icon</span>
-            <span>icon</span>
-            <span>icon</span>
+          <div class="color-primary p-5 text-xl">
+            <h4 class="font-bold">Follow Us</h4>
+            <a href="">
+              <i class="fab fa-facebook hover:text-gray-600 p-1"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-instagram-square hover:text-gray-600 p-1"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter hover:text-gray-600 p-1"></i>
+            </a>
+            
+            
           </div>
         </div>
       </aside>
@@ -163,24 +171,24 @@
     <!-- nav -->
     <div class="min-h-screen bg-hero bg-cover bg-no-repeat w-full -mt-screen">
       <div
-        class="flex flex-col flex-auto items-center justify-around min-h-screen text-white w-full md:w-1/2 text-center bg-gray-900 bg-opacity-75"
+        class="flex flex-col flex-auto items-center justify-around min-h-screen text-white w-full lg:w-1/2 text-center bg-gray-900 bg-opacity-25 md:bg-opacity-50"
       >
         <div>
-          <img src="assets/img/logo.png" alt="" class="h-40" />
+          <img src="assets/img/logo.png" alt="" class="h-40 sm:h-40 md:h-48" />
         </div>
         <div>
-          <h6 class="text-md font-light font-paragraph">
-            <span class="text-lg">W</span>ELCOME <span class="text-lg">T</span>O
+          <h6 class="text-lg sm:text-2xl font-light font-paragraph">
+            <span class="text-xl sm:text-3xl">W</span>ELCOME <span class="text-xl sm:text-3xl">T</span>O
           </h6>
-          <h1 class="text-5xl font-bold font-paragraph leading-none">
-            <span class="text-6xl">S</span>T.<span class="text-6xl">G</span
-            >EORGE </br><span class="text-6xl">C</span>OLLEGE
+          <h1 class="text-5xl sm:text-7xl lg:text-5xl font-bold font-paragraph leading-none">
+            <span class="text-6xl sm:text-8xl lg:text-6xl">S</span>T.<span class="text-6xl sm:text-8xl lg:text-6xl">G</span
+            >EORGE </br><span class="text-6xl sm:text-8xl lg:text-6xl">C</span>OLLEGE
           </h1>
         </div>
         <div>
 
           <div class="text-center">
-            <span class="font-paragraph text-xs mb-10">EXPLORE WITH US</span>
+            <span class="font-heading text-sm sm:text-md mb-10">EXPLORE WITH US</span>
           </div>
           <div class="text-center animate__animated animate__bounce animate__slower animate__delay_2s">
             <?xml version="1.0" standalone="no"?>
@@ -224,7 +232,7 @@
         class="flex flex-col flex-auto items-center justify-center min-h-screen w-11/12 mx-auto max-w-screen-xl" data-aos="fade-up" data-aos-duration="1500"
       >
         <div class="p-5">
-          <h2 class="text-4xl color-primary font-paragraph font-bold">
+          <h2 class="text-4xl text-center color-primary font-paragraph font-bold">
             WHERE LEARNING IS DOING
           </h2>
         </div>
@@ -248,7 +256,7 @@
         </p>
         </div>
         <div class="p-5">
-          <a href="" class="font-link color-primary text-hover-primary text-hover-underline-goes-right">Discover more</a>
+          <a href="" class="font-link font-bold color-primary text-hover-primary text-hover-underline-goes-right">Discover more</a>
         </div>
       </div>
     </div>
@@ -262,12 +270,12 @@
           class="flex flex-col flex-auto items-center justify-center min-h-screen w-11/12 mx-auto max-w-screen-xl color-secondary" 
         >
           <div class="p-5">
-            <h2 class="text-4xl font-paragraph font-bold">
+            <h2 class="text-center text-4xl font-paragraph font-bold">
               GET INSPIRED FROM INSPIRERS
             </h2>
           </div>
           <div>
-            <p class="font-link text-center">
+            <p class="font-link font-light text-center">
               We at St.George have enriched a culture of leaning thourgh
               parctical application and experience. We are strong believers of the
               fact that true education and knowledge is imparted only when
@@ -280,13 +288,13 @@
               they get the oppurtunity to learn and develop themselves through
               practical experiences.
           </p>
-          <p class="font-link text-center">
+          <p class="font-link font-light text-center">
             Hear from our past sudents how practical learning helped them
             grow and strive as an individual
           </p>
           </div>
           <div class="p-5">
-            <a href="" class="font-link text-hover-secondary text-hover-underline-goes-right">Discover more</a>
+            <a href="" class="font-link font-bold text-hover-secondary text-hover-underline-goes-right">Discover more</a>
           </div>
         </div>
       </div>
@@ -300,7 +308,9 @@
       <div class="swiper-container mx-auto" id="testimonials_teachers">
         <div class="swiper-wrapper">
           <div class="swiper-slide flex">
-            
+            <div class="slider-image xs-hidden flex-1">
+              <img src="assets/img/profile1.jpg" alt="">
+            </div>
             <div class="slider-content flex-1" data-aos="fade-up" data-aos-duration="1500">
               <div class="flex flex-col h-full justify-center items-start font-link pl-10">
                 <h6 class="color-primary text-sm uppercase upperstroke tracking-widest mb-5">Community Notices</h6>
@@ -309,9 +319,6 @@
 
                 <a href="" class="bg-red-600 text-gray-100 px-8 py-3 hover:bg-red-800">Click here</a>
               </div>
-            </div>
-            <div class="slider-image flex-1">
-              <img src="assets/img/profile1.jpg" alt="">
             </div>
           </div>
           <div class="swiper-slide flex">
@@ -382,27 +389,18 @@
     <!-- slide section two -->
     
     <!-- footer  -->
-    <div class="relative mt-20">
-      
+    <div class="mt-20">
 
-      <div class="absolute transform -skew-y-3 top-0 h-10 bg-red-500 w-full">
-        
-      </div>
-      
       <div class="h-auto background-primary relative" >
         <div
           class="flex flex-col flex-auto items-center justify-center w-11/12 mx-auto max-w-screen-xl"
         >
-          <h1 class="text-6xl font-heading color-secondary p-20">Footer</h1>
+          <h1 class="text-6xl font-paragraph color-secondary p-20">Footer</h1>
           
         </div>
       </div>
-      <div class="absolute transform top-0 skew-y-3 h-10 background-primary w-full">
-        
-      </div>
+      
     </div>
-
-    
 
 
     <!-- footer  -->

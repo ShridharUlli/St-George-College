@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
 .font-heading {
-  font-family: "Cinzel Decorative", cursive; }
+  font-family: "Cinzel", cursive; }
 
 .font-paragraph {
   font-family: "EB Garamond", serif; }
@@ -9,13 +9,13 @@
   font-family: "Montserrat", sans-serif; }
 
 .color-primary {
-  color: #1B263B; }
+  color: #1b263b; }
 
 .color-secondary {
   color: #e8eefe; }
 
 .background-primary {
-  background-color: #1B263B; }
+  background-color: #1b263b; }
 
 .background-secondary {
   background-color: #e8eefe; }
@@ -73,26 +73,26 @@
   transition-delay: 0s; }
 
 .text-hover-primary:after {
-  background-color: #1B263B; }
+  background-color: #1b263b; }
 
 .text-hover-primary:before {
-  background-color: #1B263B; }
+  background-color: #1b263b; }
 
 .text-hover-primary:hover,
 .text-hover-primary:focus {
   outline: 0;
   cursor: pointer;
-  color: #1B263B;
+  color: #1b263b;
   -webkit-transition: color 0.7s ease-in-out;
   transition: color 0.7s ease-in-out; }
 
 .text-hover-primary:hover:after,
 .text-hover-primary:focus:after {
-  background-color: #1B263B; }
+  background-color: #1b263b; }
 
 .text-hover-primary:hover:before,
 .text-hover-primary:focus:before {
-  background-color: #1B263B; }
+  background-color: #1b263b; }
 
 .text-hover-primary:hover:after,
 .text-hover-primary:focus:after,
@@ -318,10 +318,15 @@
   width: 50px; }
 
 .swiper-pagination-bullet-active {
-  background-color: #1B263B; }
+  background-color: #1b263b; }
 
-.bg-hero {
-  background: url("../img/bg1.jpg"); }
+@media screen and (min-width: 769px) {
+  .bg-hero {
+    background: url("../img/background_desktop.jpg"); } }
+
+@media screen and (max-width: 768px) {
+  .bg-hero {
+    background: url("../img/background_ipad.jpg"); } }
 
 .bg-icon-dark {
   background: url("../img/bgIconDark.png"); }
@@ -375,7 +380,7 @@
 
 .animated .bar {
   z-index: 9999;
-  background-color: #1B263B; }
+  background-color: #1b263b; }
 
 .animated .arrow-top-r {
   -webkit-transform: rotateZ(-45deg) translateY(11px);
@@ -644,12 +649,12 @@ button::-moz-focus-inner {
   animation-fill-mode: forwards; }
 
 .hamburger.open .top {
-  background-color: #1B263B;
+  background-color: #1b263b;
   animation: close-top-out 0.6s linear normal;
   animation-fill-mode: forwards; }
 
 .hamburger.open .bot {
-  background-color: #1B263B;
+  background-color: #1b263b;
   animation: close-bot-out 0.6s linear normal;
   animation-fill-mode: forwards; }
 

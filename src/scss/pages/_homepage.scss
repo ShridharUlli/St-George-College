@@ -1,5 +1,10 @@
 .bg-hero {
-  background: url("../img/bg1.jpg");
+  @media screen and (min-width: 769px) {
+    background: url("../img/background_desktop.jpg");
+  }
+  @media screen and (max-width: 768px) {
+    background: url("../img/background_ipad.jpg");
+  }
 }
 .bg-icon-dark {
   background: url("../img/bgIconDark.png");
