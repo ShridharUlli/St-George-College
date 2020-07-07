@@ -304,10 +304,10 @@
 
     <!-- slider section -->
     
-    <div class="h-auto bg-gray-100 cursor-testimonials">
+    <!-- <div class="h-auto bg-gray-100 cursor-testimonials">
       <div class="swiper-container mx-auto" id="testimonials_teachers">
         <div class="swiper-wrapper">
-          <div class="swiper-slide flex">
+          <div class="swiper-slide flex flex-row flex-row-reverse">
             <div class="slider-image xs-hidden flex-1">
               <img src="assets/img/profile1.jpg" alt="">
             </div>
@@ -321,8 +321,10 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide flex">
-            
+          <div class="swiper-slide flex flex-row-reverse">
+            <div class="slider-image flex-1">
+              <img src="assets/img/profile.jpg" alt="">
+            </div>
             <div class="slider-content flex-1" data-aos="fade-up" data-aos-duration="1500">
               <div class="flex flex-col h-full justify-center items-start font-link pl-10">
                 <h6 class="color-primary text-sm uppercase upperstroke tracking-widest mb-5">Community Notices</h6>
@@ -332,12 +334,11 @@
                 <a href="" class="bg-red-600 text-gray-100 px-8 py-3 hover:bg-red-800">Click here</a>
               </div>
             </div>
-            <div class="slider-image flex-1">
-              <img src="assets/img/profile.jpg" alt="">
-            </div>
           </div>
-          <div class="swiper-slide flex">
-            
+          <div class="swiper-slide flex flex-row-reverse">
+            <div class="slider-image flex-1">
+              <img src="assets/img/profile1.jpg" alt="">
+            </div>
             <div class="slider-content flex-1" data-aos="fade-up" data-aos-duration="1500">
               <div class="flex flex-col h-full justify-center items-start font-link pl-10">
                 <h6 class="color-primary text-sm uppercase upperstroke tracking-widest mb-5">Community Notices</h6>
@@ -347,26 +348,28 @@
                 <a href="" class="bg-red-600 text-gray-100 px-8 py-3 hover:bg-red-800">Click here</a>
               </div>
             </div>
-            <div class="slider-image flex-1">
-              <img src="assets/img/profile1.jpg" alt="">
-            </div>
           </div>
           
           
         </div>
-        <!-- Add Pagination -->
+        
         <div class="swiper-pagination"></div>
       </div>
-    </div>
+    </div> -->
     
     <!-- slider section -->
 
     <!-- slide section two -->
-    <div class="bg-gray-200 py-10">
+    <div class="bg-gray-100 py-10">
       
-      <div class="flex w-11/12 mx-auto cursor-testimonials">
-        
-        <div class="swiper-container w-5/6 pb-10" id="testimonials_students">
+      <div class="lg:flex w-11/12 mx-auto cursor-testimonials">
+        <div >
+          <h1 class="color-primary text-center lg:hidden font-paragraph text-2xl mb-10" style="left: 70%; transform-origin: 0px 0px;">
+            HEAR FROM <br> OUR STUDENTS
+          </h1>
+
+        </div>
+        <div class="swiper-container lg:w-5/6 pb-10" id="testimonials_students">
           <div class="swiper-wrapper">
             <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000"><img src="assets/img/student.jpg" alt=""></div>
             <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1500"><img src="assets/img/student.jpg" alt=""></div>
@@ -378,7 +381,7 @@
           <!-- Add Pagination -->
           <div class="swiper-pagination text-left"></div>
         </div>
-        <div class="relative w-1/6">
+        <div class="relative hidden lg:visible lg:w-1/6">
           <h1 class="color-primary font-paragraph text-4xl absolute transform rotate-90 whitespace-no-wrap tracking-wide" style="left: 70%; transform-origin: 0px 0px;">
             HEAR FROM <br> OUR STUDENTS
           </h1>
