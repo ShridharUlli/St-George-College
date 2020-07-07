@@ -23,7 +23,7 @@ var swiper = new Swiper("#testimonials_students", {
       spaceBetween: 40,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 50,
     },
   },
@@ -33,7 +33,7 @@ var swiper = new Swiper("#testimonials_students", {
 
 $(document).ready(function () {
   /* code for navbar */
-  $(".hamburger").on("click tap", function () {
+  $(".toggleClass").on("click tap", function () {
     navbarMagic();
   });
 
@@ -45,7 +45,6 @@ $(document).ready(function () {
 
   function navbarMagic() {
     $(".left-side").toggleClass("showNav hideNav").removeClass("hidden");
-    $(".hamburger").toggleClass("animated");
   }
 
   /* toggle classes for demo main span */
