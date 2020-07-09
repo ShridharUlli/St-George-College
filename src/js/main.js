@@ -1,9 +1,9 @@
-var swiper = new Swiper("#testimonials_teachers", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+// var swiper = new Swiper("#testimonials_teachers", {
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
 
 var swiper = new Swiper("#testimonials_students", {
   slidesPerView: 1,
