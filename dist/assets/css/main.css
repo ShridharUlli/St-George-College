@@ -325,27 +325,27 @@
 
 @media screen and (min-width: 769px) {
   .bg-hero {
-    background: url("../img/background_desktop.jpg"); } }
+    background: url("../img/backgrounds/background_desktop.jpg"); } }
 
 @media screen and (max-width: 768px) {
   .bg-hero {
-    background: url("../img/background_ipad.jpg"); } }
+    background: url("../img/backgrounds/background_ipad.jpg"); } }
 
 @media screen and (max-width: 640px) {
   .bg-hero {
-    background: url("../img/background_iphone.jpg"); } }
+    background: url("../img/backgrounds/background_iphone.jpg"); } }
 
 .bg-icon-dark {
-  background: url("../img/bgIconDark.png"); }
+  background: url("../img/backgrounds/bgIconDark.png"); }
 
 .bg-icon {
-  background: url("../img/bgIcon.png"); }
+  background: url("../img/backgrounds/bgIcon.png"); }
 
 .bg-icon-dark-rotated {
-  background: url("../img/bgIconDarkRotated.png"); }
+  background: url("../img/backgrounds/bgIconDarkRotated.png"); }
 
 .bg-icon-rotated {
-  background: url("../img/bgIconRotated.png"); }
+  background: url("../img/backgrounds/bgIconRotated.png"); }
 
 .animated,
 .btn-nav {
