@@ -31,6 +31,9 @@
 .cursor-testimonials {
   cursor: url("../img/cursor.svg"), auto; }
 
+.bg-size-20 {
+  background-size: 20rem !important; }
+
 /* https://coolors.co/ff5628-1e3541-2e5266-dee5e5-fcfafa */
 /* some effects transition more than one property at the same time */
 /* some effects transition height, some width, some both */
@@ -310,7 +313,7 @@
 #testimonials_teachers > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  width: 50%; }
+  width: 60%; }
 
 .swiper-pagination-bullet {
   border-radius: 0;
@@ -337,6 +340,12 @@
 
 .bg-icon {
   background: url("../img/bgIcon.png"); }
+
+.bg-icon-dark-rotated {
+  background: url("../img/bgIconDarkRotated.png"); }
+
+.bg-icon-rotated {
+  background: url("../img/bgIconRotated.png"); }
 
 .animated,
 .btn-nav {
