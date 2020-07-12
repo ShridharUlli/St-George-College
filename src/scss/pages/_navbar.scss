@@ -296,6 +296,14 @@ input#toggleClass {
   width: 100px;
   cursor: pointer;
 }
+circle {
+  fill: #fff3;
+  opacity: 0;
+}
+
+label:hover circle {
+  opacity: 1;
+}
 
 path {
   stroke: white;
