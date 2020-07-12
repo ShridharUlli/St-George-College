@@ -3,6 +3,10 @@ var swiper = new Swiper("#testimonials_teachers", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });
 
 var swiper = new Swiper("#testimonials_students", {
