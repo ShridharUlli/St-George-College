@@ -4,7 +4,7 @@ var swiper = new Swiper("#testimonials_teachers", {
     clickable: true,
   },
   autoplay: {
-    delay: 2500,
+    delay: 8000,
     disableOnInteraction: false,
   },
 });
