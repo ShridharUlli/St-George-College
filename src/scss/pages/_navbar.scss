@@ -291,7 +291,7 @@ input#toggleClass {
   display: none;
 }
 .menu {
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   width: 100px;
   cursor: pointer;
