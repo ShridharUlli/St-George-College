@@ -9,6 +9,22 @@ var swiper = new Swiper("#testimonials_teachers", {
   },
 });
 
+var swiper = new Swiper("#testimonials_campus", {
+  slidesPerView: 2,
+  spaceBetween: 40,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
+  },
+});
+
+
+
+
 var swiper = new Swiper("#testimonials_students", {
   slidesPerView: 1,
   spaceBetween: 40,
