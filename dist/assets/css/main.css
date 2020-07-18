@@ -737,3 +737,6 @@ path {
 
 .menu--1 input:checked + svg .line--2 {
   --offset: -50; }
+
+html {
+  scroll-behavior: smooth; }
