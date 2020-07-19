@@ -225,14 +225,21 @@ var openmodal = document.querySelectorAll('.modal-open')
     //call to action 
 
     const callToAction = document.querySelector("#call_to_action");
+    const icon = document.querySelector("#call_to_action > i ");
+  
     const callToActionDetails = document.querySelector("#call_to_action_details");
     const callUs = document.querySelector("#call_us");
     const callBack = document.querySelector("#call_back");
 
     function displayCallToAction(){
       if(callToActionDetails.classList.contains('hidden')){
-        callToActionDetails.classList.remove('hidden');                
+        callToActionDetails.classList.remove('hidden');
+        icon.classList.add('fa-times');
+        icon.classList.remove('fa-headset');
+        
       }else{
+        icon.classList.add('fa-headset');
+        icon.classList.remove('fa-times');
         callToActionDetails.classList.add('hidden');        
       }
     } 
