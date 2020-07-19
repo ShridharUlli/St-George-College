@@ -227,7 +227,13 @@ var openmodal = document.querySelectorAll('.modal-open')
     const callToAction = document.querySelector("#call_to_action");
     const callToActionDetails = document.querySelector("#call_to_action_details");
 
-    $("#call_to_action").click(function(){
-      $("#call_to_action_details").toggleClass("hidden");
-    });
+    function displayCallToAction(){
+      if(callToActionDetails.classList.contains('invisible')){
+        callToActionDetails.classList.remove('invisible');                
+      }else{
+        callToActionDetails.classList.add('invisible');        
+      }
+    } 
+
+    callToAction.addEventListener("click", displayCallToAction);
     
