@@ -225,10 +225,9 @@ var openmodal = document.querySelectorAll('.modal-open')
     //call to action 
 
     const callToAction = document.querySelector("#call_to_action");
-    const icon = document.querySelector("#call_to_action > i ");
-    
+    const icon = document.querySelector("#call_to_action > i ");    
     const callToActionDetails = document.querySelector("#call_to_action_details");
-    const callUs = document.querySelector("#call_us");    
+    
     
     function displayCallToAction(){
       if(callToActionDetails.classList.contains('hidden')){
@@ -242,32 +241,35 @@ var openmodal = document.querySelectorAll('.modal-open')
         callToActionDetails.classList.add('hidden');        
       }
     } 
-
-    function displayDialView(){
-      callUs.innerHTML = `<div class="flex items-center justify-around p-2">
-      <div class=" flex-grow-0 h-10 flex items-center justify-center">   
-      <div class="text-md text-gray-700 uppercase" id="dial_us">dial us</div>      
-      </div>
-      <div class="flex-grow-0 h-10 w-px bg-gray-700"></div>
-      <div class="flex-grow-0 flex items-center justify-center">
-      <div class="text-md text-gray-700 uppercase" id="call_back">call back</div>
-      
-      </div>
-      </div>`;
-      const callBack = document.querySelector("#call_back");
-      callBack.addEventListener("click", callBackForm);
-    }
     
-    function callBackForm(){
-      callUs.innerHTML = `<div class="flex items-center justify-around p-2">
-      <div class="h-10 flex items-center justify-center">   
-      <input type="text" class=""/> 
-      <h1>hellow world</h1>
-      </div      
-      </div>`;
-    }
-
+    
     callToAction.addEventListener("click", displayCallToAction);
-    callUs.addEventListener("click", displayDialView);
-
     
+    
+    const callUs = document.querySelector("#call_us");      
+    const dialUs = document.querySelector("#dial_us");
+    const enterNumber = document.querySelector("#enter_number");
+    const succesfull = document.querySelector("#succesfull");
+
+
+    function displayDialUs(){
+      if(dialUs.classList.contains('hidden')){
+        dialUs.classList.remove('hidden');                
+        callUs.classList.add('hidden');                
+      }
+    } 
+    function displayEnterNumber(){
+      if(enterNumber.classList.contains('hidden')){
+        enterNumber.classList.remove('hidden');                
+        dialUs.classList.add('hidden');                
+      }
+    } 
+    function displaySuccesfull(){
+      if(succesfull.classList.contains('hidden')){
+        succesfull.classList.remove('hidden');                
+        enterNumber.classList.add('hidden');                
+      }
+    } 
+    callUs.addEventListener("click",displayDialUs);
+    dialUs.addEventListener("click",displayEnterNumber);
+    enterNumber.addEventListener("click",displaySuccesfull);
