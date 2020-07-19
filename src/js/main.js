@@ -218,3 +218,16 @@ var openmodal = document.querySelectorAll('.modal-open')
       modal.classList.toggle('pointer-events-none')
       body.classList.toggle('modal-active')
     }
+
+
+
+
+    //call to action 
+
+    const callToAction = document.querySelector("#call_to_action");
+    const callToActionDetails = document.querySelector("#call_to_action_details");
+
+    $("#call_to_action").click(function(){
+      $("#call_to_action_details").toggleClass("hidden");
+    });
+    
