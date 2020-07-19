@@ -228,18 +228,17 @@ var openmodal = document.querySelectorAll('.modal-open')
     const icon = document.querySelector("#call_to_action > i ");
   
     const callToActionDetails = document.querySelector("#call_to_action_details");
-    const callUs = document.querySelector("#call_us");
-    const callBack = document.querySelector("#call_back");
+    const callUs = document.querySelector("#call_us");    
 
     function displayCallToAction(){
       if(callToActionDetails.classList.contains('hidden')){
         callToActionDetails.classList.remove('hidden');
-        icon.classList.add('fa-times');
-        icon.classList.remove('fa-headset');
+        icon.classList.add('im','im-x-mark','text-2xl');
+        icon.classList.remove('fa','fa-headset','text-4xl');
         
       }else{
-        icon.classList.add('fa-headset');
-        icon.classList.remove('fa-times');
+        icon.classList.add('fa','fa-headset','text-4xl');
+        icon.classList.remove('im','im-x-mark','text-2xl');
         callToActionDetails.classList.add('hidden');        
       }
     } 
@@ -255,18 +254,32 @@ var openmodal = document.querySelectorAll('.modal-open')
         
       </div>
     </div>`;
+
+    
+   
+
     }
 
-    function callBackForm(){
-      callUs.innerHTML = `<div class="flex items-center justify-around p-2">
-      <div class=" flex-grow-0 h-10 flex items-center justify-center">   
-      <input type="text" class=""/> 
-      <h1>hellow rold</h1>
-      </div      
-    </div>`;
-    }
+   
 
     callToAction.addEventListener("click", displayCallToAction);
     callUs.addEventListener("click", displayDialView);
     
-    callBack.addEventListener('click', callBackForm);
+    
+
+    const callBack = document.querySelector("#call_back");
+    
+    // function callBackForm(){
+
+    //   callUs.innerHTML = `<div class="flex items-center justify-around p-2">
+    //   <div class="h-10 flex items-center justify-center">   
+    //   <input type="text" class=""/> 
+    //   <h1>hellow rold</h1>
+    //   </div      
+    //   </div>`;
+    // }
+    
+    callBack.onload = alert("loaded");
+    
+    
+    
