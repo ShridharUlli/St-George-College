@@ -226,14 +226,40 @@ var openmodal = document.querySelectorAll('.modal-open')
 
     const callToAction = document.querySelector("#call_to_action");
     const callToActionDetails = document.querySelector("#call_to_action_details");
+    const callUs = document.querySelector("#call_us");
+    const callBack = document.querySelector("#call_back");
 
     function displayCallToAction(){
-      if(callToActionDetails.classList.contains('invisible')){
-        callToActionDetails.classList.remove('invisible');                
+      if(callToActionDetails.classList.contains('hidden')){
+        callToActionDetails.classList.remove('hidden');                
       }else{
-        callToActionDetails.classList.add('invisible');        
+        callToActionDetails.classList.add('hidden');        
       }
     } 
 
+    function displayDialView(){
+      callUs.innerHTML = `<div class="flex items-center justify-around p-2">
+      <div class=" flex-grow-0 h-10 flex items-center justify-center">   
+        <div class="text-md text-gray-700 uppercase" id="dial_us">dial us</div>      
+      </div>
+      <div class="flex-grow-0 h-10 w-px bg-gray-700"></div>
+      <div class="flex-grow-0 flex items-center justify-center">
+        <div class="text-md text-gray-700 uppercase" id="call_back">call back</div>
+        
+      </div>
+    </div>`;
+    }
+
+    function callBackForm(){
+      callUs.innerHTML = `<div class="flex items-center justify-around p-2">
+      <div class=" flex-grow-0 h-10 flex items-center justify-center">   
+      <input type="text" class=""/> 
+      <h1>hellow rold</h1>
+      </div      
+    </div>`;
+    }
+
     callToAction.addEventListener("click", displayCallToAction);
+    callUs.addEventListener("click", displayDialView);
     
+    callBack.addEventListener('click', callBackForm);
