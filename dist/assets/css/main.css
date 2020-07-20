@@ -740,3 +740,6 @@ path {
 
 html {
   scroll-behavior: smooth; }
+
+.form-checkbox-custom {
+  border-radius: 0px !important; }
