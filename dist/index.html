@@ -245,14 +245,14 @@
       >
         <div class="swiper-wrapper">
           <div class="flex flex-row-reverse swiper-slide">
-            <div class="w-5/12 slider-image xs-hidden">
+            <div class="hidden w-5/12 slider-image lg:block">
               <img
                 src="assets/img/slider/slider1.jpg"
                 alt=""
                 class="float-right"
               />
             </div>
-            <div class="w-7/12 px-10 py-10 slider-content">
+            <div class="w-full px-10 py-10 lg:w-7/12 slider-content">
               <div
                 class="flex flex-col items-center justify-around h-full text-center bg-left-bottom bg-no-repeat bg-icon-dark-rotated bg-size-20"
               >
@@ -272,15 +272,20 @@
                 <div class="p-5">
                   <a
                     href=""
-                    class="tracking-widest uppercase font-link color-primary text-hover-primary text-hover-underline-goes-right"
+                    class="hidden tracking-widest uppercase sm:block font-link color-primary text-hover-primary text-hover-underline-goes-right"
                     >KNOW MORE ABOUT St.GEORGE COLLEGE</a
+                  >
+                  <a
+                    href=""
+                    class="tracking-widest uppercase sm:hidden font-link color-primary text-hover-primary text-hover-underline-goes-right"
+                    >KNOW MORE</a
                   >
                 </div>
               </div>
             </div>
           </div>
           <div class="flex flex-row-reverse swiper-slide">
-            <div class="w-5/12 slider-image xs-hidden">
+            <div class="hidden w-5/12 slider-image lg:block">
               <img
                 src="assets/img/slider/slider2.jpg"
                 alt=""
@@ -316,7 +321,7 @@
             </div>
           </div>
           <div class="flex flex-row-reverse swiper-slide">
-            <div class="w-5/12 slider-image xs-hidden">
+            <div class="hidden w-5/12 slider-image lg:block">
               <img
                 src="assets/img/slider/slider3.jpg"
                 alt=""
@@ -1062,8 +1067,8 @@
         <!-- section 5 -->
 
         
-          <div class="flex flex-wrap min-h-screen color-primary">
-            <div class="flex items-center w-full px-8 py-12 md:w-2/5">
+          <div class="flex flex-col flex-wrap w-11/12 min-h-screen mx-auto lg:flex-row color-primary">
+            <div class="flex items-center w-full px-8 py-12 lg:w-2/5">
               <div class="max-w-lg mx-auto text-center">
                 <div
                   class="w-px h-10 mx-auto bg-gray-500 opacity-50"
@@ -1078,7 +1083,7 @@
                 <a
                   href=""
                   class="tracking-widest uppercase font-link color-primary text-hover-primary text-hover-underline-goes-right"
-                  >Know More about our infrastructure</a>
+                  >Know More</a>
                 <div
                   class="text-center animate__animated animate__bounce animate__slower animate__delay_2s"
                 >
@@ -1115,7 +1120,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex items-center w-full max-h-screen md:w-3/5">
+            <div class="flex items-center w-full max-h-screen lg:w-3/5">
               <div class="pb-10 swiper-container lg:w-5/6" id="testimonials_campus">
                 <div class="swiper-wrapper">
                   <div
@@ -1469,7 +1474,7 @@
               data-aos-duration="1500"
             ></div>
             <p class="text-gray-600 font-heading text-md">Admission</p>
-            <h3 class="mt-8 text-4xl font-heading">
+            <h3 class="mt-8 text-xl lg:text-4xl font-heading">
               SUPPORTING YOUR APPLICATION
             </h3>
             <p class="my-8 text-lg font-paragraph">
@@ -1546,8 +1551,8 @@
             <!-- modal -->
           </div>
         </div>
-        <div class="flex flex-row justify-between">
-          <div class="px-5">
+        <div class="flex flex-col justify-between md:flex-row">
+          <div class="px-5 py-5">
             <a
               href=""
               class="font-bold tracking-widest uppercase font-link color-primary text-hover-primary text-hover-fill-goes-right"
@@ -1559,14 +1564,14 @@
               BBA, B.Com, BCA
             </p>
           </div>
-          <div class="px-5">
+          <div class="px-5 py-5">
             <a
               href=""
               class="my-8 font-bold tracking-widest uppercase font-link text-hover-primary text-hover-fill-goes-right"
               >Apply for post graduation</a
             >
             <p
-              class="p-2 mt-2 text-xs tracking-widest text-right text-gray-600 uppercase font-link"
+              class="p-2 mt-2 text-xs tracking-widest text-gray-600 uppercase md:text-right font-link"
             >
               MBA
             </p>
