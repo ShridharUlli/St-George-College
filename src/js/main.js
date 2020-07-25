@@ -10,7 +10,7 @@ var swiper = new Swiper("#testimonials_teachers", {
 });
 
 var swiper = new Swiper("#testimonials_campus", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 40,
   pagination: {
     el: ".swiper-pagination",
@@ -19,6 +19,20 @@ var swiper = new Swiper("#testimonials_campus", {
   autoplay: {
     delay: 8000,
     disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
   },
 });
 
