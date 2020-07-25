@@ -35,6 +35,32 @@ var swiper = new Swiper("#testimonials_campus", {
     },
   },
 });
+var swiper = new Swiper("#testimonials_blog", {
+  slidesPerView: 1,
+  spaceBetween: 40,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+});
 
 
 
@@ -93,6 +119,10 @@ var swiper = new Swiper("#testimonials_stories", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
   },
   breakpoints: {
     640: {
