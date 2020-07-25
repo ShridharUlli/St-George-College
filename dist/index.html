@@ -50,7 +50,7 @@
 
     <main class="navbar">
       <aside class="flex flex-col hidden left-side background-primary hideNav">
-        <div class="flex items-center justify-around background-primary">
+        <div class="flex items-center justify-around mt-4 md:mt-0 background-primary">
           <div class="flex-initial"></div>
           <div class="flex-initial h-12 m-2 lg:h-20">
             <img
@@ -65,69 +65,52 @@
             ></a>
           </div>
         </div>
-
-        <div
-          id="cssmenu"
+        <div         
           class="w-11/12 mx-auto mt-10 bg-right bg-no-repeat bg-contain bg-icon-dark"
         >
-          <ul class="w-3/12 color-secondary font-link">
-            <li class="has-sub">
-              <a href="#" class="p-5 text-3xl hover:text-gray-500"
-                ><span>ABOUT US</span></a
-              >
-              <ul class="w-full">
-                <li class="">
-                  <a href="#" class="p-5 text-xl font-light hover:text-gray-500"
-                    ><span>ABOUT ST.GEORGE</span></a
-                  >
-                </li>
-                <li class="">
-                  <a href="#" class="p-5 text-xl font-light hover:text-gray-500"
-                    ><span>VISION & MISSION</span></a
-                  >
-                </li>
-                <li class="has-sub">
-                  <a href="#" class="p-5 text-xl font-light hover:text-gray-500"
-                    ><span>MESSAGES</span></a
-                  >
-                  <ul class="w-full">
-                    <li>
-                      <a href="#" class="p-5 text-lg hover:text-gray-500"
-                        ><span>CHAIRMAN'S MESSAGE</span></a
-                      >
+        <ul>
+          <li class="lg:w-3/12 dropdown-link color-secondary font-link">
+            <a href="#" class="p-5 text-3xl uppercase hover:text-gray-500">About Us<i class="text-white fas fa-caret-down" aria-hidden="true"></i></a>
+            <div class="dropdown second lg:w-full">
+                <ul>
+                    <li class="dropdown-link">
+                        <a href="#" class="p-5 text-xl font-light uppercase hover:text-gray-500">About St.George</a>
                     </li>
-                    <li class="last">
-                      <a href="#" class="p-5 text-lg hover:text-gray-500"
-                        ><span>PRINCIPAL'S MESSAGE</span></a
-                      >
+                    <li class="dropdown-link">
+                        <a href="#" class="p-5 text-xl font-light uppercase hover:text-gray-500">Vision & Mission</a>
+                    </li>                    
+                    <li class="dropdown-link">
+                        <a href="#" class="p-5 text-xl font-light uppercase hover:text-gray-500">Messages<i class="fas fa-caret-down" aria-hidden="true"></i></a>
+                        <div class="dropdown second lg:w-full">
+                            <ul>
+                                <li class="dropdown-link">
+                                    <a href="#" class="p-5 text-xl font-light uppercase hover:text-gray-500">Chairman's Message</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#" class="p-5 text-xl font-light uppercase hover:text-gray-500">Principal's Message</a>
+                                </li>                                                                
+                            </ul>
+                        </div>
                     </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="">
-              <a href="#" class="p-5 text-3xl hover:text-gray-500"
-                ><span>COURSES</span></a
-              >
-            </li>
-            <li>
-              <a href="#" class="p-5 text-3xl hover:text-gray-500"
-                ><span>NEWS</span></a
-              >
-            </li>
-            <li class="last">
-              <a href="#" class="p-5 text-3xl hover:text-gray-500"
-                ><span>PLACEMENTS</span></a
-              >
-            </li>
-            <li class="last">
-              <a href="#" class="p-5 text-3xl hover:text-gray-500"
-                ><span>GALLERY</span></a
-              >
-            </li>
-          </ul>
+                    
+                </ul>
+            </div>
+        </li>
+        <li class="lg:w-3/12 dropdown-link color-secondary font-link">
+          <a href="#" class="p-5 text-3xl uppercase hover:text-gray-500">Courses</a>          
+      </li>
+        <li class="lg:w-3/12 dropdown-link color-secondary font-link">
+          <a href="#" class="p-5 text-3xl uppercase hover:text-gray-500">News</a>          
+      </li>
+        <li class="lg:w-3/12 dropdown-link color-secondary font-link">
+          <a href="#" class="p-5 text-3xl uppercase hover:text-gray-500">Placements</a>          
+      </li>
+        <li class="lg:w-3/12 dropdown-link color-secondary font-link">
+          <a href="#" class="p-5 text-3xl uppercase hover:text-gray-500">Gallery</a>          
+      </li>
+        </ul>
         </div>
-
+        <!-- new css menu  -->
         <div
           class="items-start justify-between w-11/12 mx-auto mt-auto lg:flex color-secondary"
         >
