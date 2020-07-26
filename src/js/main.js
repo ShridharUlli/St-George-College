@@ -62,9 +62,6 @@ var swiper = new Swiper("#testimonials_blog", {
   },
 });
 
-
-
-
 var swiper = new Swiper("#testimonials_students", {
   slidesPerView: 1,
   spaceBetween: 40,
@@ -223,97 +220,67 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+//call to action
 
+const callToAction = document.querySelector("#call_to_action");
+const icon = document.querySelector("#call_to_action > i ");
+const callToActionDetails = document.querySelector("#call_to_action_details");
 
-var openmodal = document.querySelectorAll('.modal-open')
-    for (var i = 0; i < openmodal.length; i++) {
-      openmodal[i].addEventListener('click', function(event){
-    	event.preventDefault()
-    	toggleModal()
-      })
+function displayCallToAction() {
+  if (callToActionDetails.classList.contains("hidden")) {
+    callToActionDetails.classList.remove("hidden");
+    icon.classList.add("im", "im-x-mark", "text-2xl");
+    icon.classList.remove("fa", "fa-headset", "text-4xl");
+  } else {
+    icon.classList.add("fa", "fa-headset", "text-4xl");
+    icon.classList.remove("im", "im-x-mark", "text-2xl");
+    callToActionDetails.classList.add("hidden");
+  }
+}
+
+callToAction.addEventListener("click", displayCallToAction);
+
+const callUs = document.querySelector("#call_us");
+const dialUs = document.querySelector("#dial_us");
+const enterNumber = document.querySelector("#enter_number");
+const succesfull = document.querySelector("#succesfull");
+
+function displayDialUs() {
+  if (dialUs.classList.contains("hidden")) {
+    dialUs.classList.remove("hidden");
+    callUs.classList.add("hidden");
+  }
+}
+function displayEnterNumber() {
+  if (enterNumber.classList.contains("hidden")) {
+    enterNumber.classList.remove("hidden");
+    dialUs.classList.add("hidden");
+  }
+}
+function displaySuccesfull() {
+  if (succesfull.classList.contains("hidden")) {
+    succesfull.classList.remove("hidden");
+    enterNumber.classList.add("hidden");
+  }
+}
+callUs.addEventListener("click", displayDialUs);
+dialUs.addEventListener("click", displayEnterNumber);
+enterNumber.addEventListener("click", displaySuccesfull);
+
+// blog view all
+const viewButton = document.querySelector("#view_button");
+const viewAll = document.querySelectorAll("#view_all");
+
+function displayBlogs() {
+  console.log("clicked");
+  for (var i = 0; i < viewAll.length + 1; i++) {
+    if (viewAll[i].classList.contains("hidden")) {
+      viewAll[i].classList.remove("hidden");
+      viewButton.innerHTML = "View Less";
+    } else {
+      viewAll[i].classList.add("hidden");
+      viewButton.innerHTML = "View All";
     }
-    
-    const overlay = document.querySelector('.modal-overlay')
-    overlay.addEventListener('click', toggleModal)
-    
-    var closemodal = document.querySelectorAll('.modal-close')
-    for (var i = 0; i < closemodal.length; i++) {
-      closemodal[i].addEventListener('click', toggleModal)
-    }
-    
-    document.onkeydown = function(evt) {
-      evt = evt || window.event
-      var isEscape = false
-      if ("key" in evt) {
-    	isEscape = (evt.key === "Escape" || evt.key === "Esc")
-      } else {
-    	isEscape = (evt.keyCode === 27)
-      }
-      if (isEscape && document.body.classList.contains('modal-active')) {
-    	toggleModal()
-      }
-    };
-    
-    
-    function toggleModal () {
-      const body = document.querySelector('body')
-      const modal = document.querySelector('.modal')
-      modal.classList.toggle('opacity-0')
-      modal.classList.toggle('pointer-events-none')
-      body.classList.toggle('modal-active')
-    }
-
-
-
-
-    //call to action 
-
-    const callToAction = document.querySelector("#call_to_action");
-    const icon = document.querySelector("#call_to_action > i ");    
-    const callToActionDetails = document.querySelector("#call_to_action_details");
-    
-    
-    function displayCallToAction(){
-      if(callToActionDetails.classList.contains('hidden')){
-        callToActionDetails.classList.remove('hidden');
-        icon.classList.add('im','im-x-mark','text-2xl');
-        icon.classList.remove('fa','fa-headset','text-4xl');
-        
-      }else{
-        icon.classList.add('fa','fa-headset','text-4xl');
-        icon.classList.remove('im','im-x-mark','text-2xl');
-        callToActionDetails.classList.add('hidden');        
-      }
-    } 
-    
-    
-    callToAction.addEventListener("click", displayCallToAction);
-    
-    
-    const callUs = document.querySelector("#call_us");      
-    const dialUs = document.querySelector("#dial_us");
-    const enterNumber = document.querySelector("#enter_number");
-    const succesfull = document.querySelector("#succesfull");
-
-
-    function displayDialUs(){
-      if(dialUs.classList.contains('hidden')){
-        dialUs.classList.remove('hidden');                
-        callUs.classList.add('hidden');                
-      }
-    } 
-    function displayEnterNumber(){
-      if(enterNumber.classList.contains('hidden')){
-        enterNumber.classList.remove('hidden');                
-        dialUs.classList.add('hidden');                
-      }
-    } 
-    function displaySuccesfull(){
-      if(succesfull.classList.contains('hidden')){
-        succesfull.classList.remove('hidden');                
-        enterNumber.classList.add('hidden');                
-      }
-    } 
-    callUs.addEventListener("click",displayDialUs);
-    dialUs.addEventListener("click",displayEnterNumber);
-    enterNumber.addEventListener("click",displaySuccesfull);
+  }
+}
+viewButton.addEventListener("click", displayBlogs);
