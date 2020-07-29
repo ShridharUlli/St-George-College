@@ -137,6 +137,20 @@ var swiper = new Swiper("#testimonials_stories", {
   },
 });
 
+var swiper = new Swiper("#gallery", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  // init: false,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
+  },
+});
+
 /* JS needed only for demo */
 
 $(document).ready(function () {

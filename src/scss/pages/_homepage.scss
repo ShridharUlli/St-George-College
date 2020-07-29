@@ -9,6 +9,11 @@
     background: url("../img/backgrounds/background_iphone.jpg");
   }
 }
+.bg-message {
+  @media screen and (min-width: 769px) {
+    background: url("../img/message.jpg");
+  }
+}
 .bg-icon-dark {
   background: url("../img/backgrounds/bgIconDark.png");
 }

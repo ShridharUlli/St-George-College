@@ -415,6 +415,17 @@
 .swiper-pagination-bullet-active {
   background-color: #1b263b; }
 
+.swiper-container-horizontal > .swiper-pagination-progressbar,
+.swiper-container-vertical
+> .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  bottom: 0 !important;
+  top: unset !important; }
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  bottom: 0 !important;
+  top: unset !important;
+  background: #1b263b; }
+
 @media screen and (min-width: 769px) {
   .bg-hero {
     background: url("../img/backgrounds/background_desktop.jpg"); } }
@@ -426,6 +437,10 @@
 @media screen and (max-width: 640px) {
   .bg-hero {
     background: url("../img/backgrounds/background_iphone.jpg"); } }
+
+@media screen and (min-width: 769px) {
+  .bg-message {
+    background: url("../img/message.jpg"); } }
 
 .bg-icon-dark {
   background: url("../img/backgrounds/bgIconDark.png"); }

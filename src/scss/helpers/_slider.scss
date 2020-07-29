@@ -11,3 +11,15 @@
 .swiper-pagination-bullet-active {
   background-color: $primary;
 }
+
+.swiper-container-horizontal > .swiper-pagination-progressbar,
+.swiper-container-vertical
+  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  bottom: 0 !important;
+  top: unset !important;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  bottom: 0 !important;
+  top: unset !important;
+  background: $primary;
+}
