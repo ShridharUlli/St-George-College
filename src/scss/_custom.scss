@@ -6,6 +6,10 @@ html {
 }
 
 .arrow_box {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 .arrow_box:after,
 .arrow_box:before {

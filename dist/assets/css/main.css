@@ -972,6 +972,12 @@ html {
 .form-checkbox-custom {
   border-radius: 0px !important; }
 
+.arrow_box {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .arrow_box {
+      display: block; } }
+
 .arrow_box:after,
 .arrow_box:before {
   right: 100%;
