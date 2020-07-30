@@ -146,7 +146,7 @@ var swiper = new Swiper("#gallery", {
     type: "progressbar",
   },
   autoplay: {
-    delay: 8000,
+    delay: 3000,
     disableOnInteraction: false,
   },
 });
