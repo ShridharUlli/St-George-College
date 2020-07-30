@@ -1,6 +1,33 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-.form-checkbox-custom{
-    border-radius: 0px!important;    
+.form-checkbox-custom {
+  border-radius: 0px !important;
+}
+
+.arrow_box {
+}
+.arrow_box:after,
+.arrow_box:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #fff;
+  border-width: 10px;
+  margin-top: -56px;
+}
+.arrow_box:before {
+  border-color: rgba(203, 213, 224, 0);
+  border-right-color: #cbd5e0;
+  border-width: 14px;
+  margin-top: -60px;
 }
