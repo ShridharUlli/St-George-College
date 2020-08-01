@@ -34,6 +34,18 @@
 .bg-size-20 {
   background-size: 20rem !important; }
 
+@media screen and (min-width: 1024px) {
+  .flex-custom-courses {
+    flex: 1 0 21%; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .flex-custom-courses {
+    flex: 1 0 41%; } }
+
+@media screen and (max-width: 767px) {
+  .flex-custom-courses {
+    flex: 1 0 91%; } }
+
 /* https://coolors.co/ff5628-1e3541-2e5266-dee5e5-fcfafa */
 /* some effects transition more than one property at the same time */
 /* some effects transition height, some width, some both */

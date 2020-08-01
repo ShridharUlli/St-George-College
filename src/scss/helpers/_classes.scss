@@ -45,3 +45,16 @@
 .bg-size-20 {
   background-size: 20rem !important;
 }
+
+//flex
+.flex-custom-courses {
+  @media screen and (min-width: 1024px) {
+    flex: 1 0 21%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    flex: 1 0 41%;
+  }
+  @media screen and (max-width: 767px) {
+    flex: 1 0 91%;
+  }
+}

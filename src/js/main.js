@@ -256,6 +256,7 @@ callToAction.addEventListener("click", displayCallToAction);
 
 const callUs = document.querySelector("#call_us");
 const dialUs = document.querySelector("#dial_us");
+const callBack = document.querySelector("#call_back");
 const enterNumber = document.querySelector("#enter_number");
 const succesfull = document.querySelector("#succesfull");
 
@@ -276,9 +277,13 @@ function displaySuccesfull() {
     succesfull.classList.remove("hidden");
     enterNumber.classList.add("hidden");
   }
+  setTimeout(function () {
+    succesfull.classList.add("hidden");
+    callUs.classList.remove("hidden");
+  }, 3000);
 }
 callUs.addEventListener("click", displayDialUs);
-dialUs.addEventListener("click", displayEnterNumber);
+callBack.addEventListener("click", displayEnterNumber);
 enterNumber.addEventListener("click", displaySuccesfull);
 
 // blog view all
