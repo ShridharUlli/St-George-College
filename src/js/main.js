@@ -254,6 +254,12 @@ const callToAction = document.querySelector("#call_to_action");
 const icon = document.querySelector("#call_to_action > i ");
 const callToActionDetails = document.querySelector("#call_to_action_details");
 
+const callUs = document.querySelector("#call_us");
+const dialUs = document.querySelector("#dial_us");
+const callBack = document.querySelector("#call_back");
+const enterNumber = document.querySelector("#enter_number");
+const succesfull = document.querySelector("#succesfull");
+
 function displayCallToAction() {
   if (callToActionDetails.classList.contains("hidden")) {
     callToActionDetails.classList.remove("hidden");
@@ -263,16 +269,16 @@ function displayCallToAction() {
     icon.classList.add("fa", "fa-headset", "text-4xl");
     icon.classList.remove("im", "im-x-mark", "text-2xl");
     callToActionDetails.classList.add("hidden");
+    succesfull.classList.add("hidden");
+    dialUs.classList.add("hidden");
+    enterNumber.classList.add("hidden");
+    callUs.classList.remove("hidden");
   }
 }
 
 callToAction.addEventListener("click", displayCallToAction);
 
-const callUs = document.querySelector("#call_us");
-const dialUs = document.querySelector("#dial_us");
-const callBack = document.querySelector("#call_back");
-const enterNumber = document.querySelector("#enter_number");
-const succesfull = document.querySelector("#succesfull");
+
 
 function displayDialUs() {
   if (dialUs.classList.contains("hidden")) {
