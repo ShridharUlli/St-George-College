@@ -139,7 +139,7 @@ var swiper = new Swiper("#testimonials_stories", {
 
 var swiper = new Swiper("#gallery", {
   slidesPerView: 'auto',
-  autoHeight: true,
+  autoHeight: true,  
   spaceBetween: 30,
   // init: false,
   pagination: {
@@ -149,6 +149,11 @@ var swiper = new Swiper("#gallery", {
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
+  },
+  breakpoints: {
+    769: {
+      autoHeight: false, 
+    },
   },
 });
 
